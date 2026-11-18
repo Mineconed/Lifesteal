@@ -1,0 +1,19 @@
+name: Lifesteal
+version: ${project.version}
+main: dk.mineconed.lifesteal.Lifesteal
+author: Mineconed
+api-version: 1.13
+commands:
+  lifesteal:
+    aliases: [ls]
+    usage: /lifesteal <set|add|remove|giveheart|revive|reload>
+  hearts:
+    aliases: [heart]
+    usage: /hearts [player]
+  withdraw:
+    usage: /withdraw [amount]
+permissions:
+  lifesteal.admin:
+    default: op
+  lifesteal.withdraw:
+    default: true

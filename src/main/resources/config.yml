@@ -1,0 +1,41 @@
+# Lifesteal
+# Made by Mineconed
+
+# Language: en or da
+language: en
+
+# Hearts a new player starts with (10 is normal)
+start_hearts: 10
+# Max hearts a player can have
+max_hearts: 20
+# Hearts stolen per kill
+hearts_per_kill: 1
+
+# Lose a heart when you die without a killer (fall, lava...)
+lose_heart_on_natural_death: false
+
+# The killer is at max hearts: drop a heart item instead
+drop_heart_when_full: true
+
+# What happens at 0 hearts
+elimination:
+  # ban or spectator
+  action: ban
+  # Ban time in minutes. 0 = forever
+  ban_minutes: 1440
+
+# Hearts you get back after the ban or after /lifesteal revive
+revive_hearts: 3
+
+anti_farm:
+  # Kills between players on the same IP do not count
+  ignore_same_ip: true
+  # Killing the same player again within this many minutes does not count
+  same_victim_minutes: 10
+
+# The heart item from /withdraw (right click to use)
+heart_item:
+  material: NETHER_STAR
+
+# Worlds where Lifesteal is off
+disabled_worlds: []
